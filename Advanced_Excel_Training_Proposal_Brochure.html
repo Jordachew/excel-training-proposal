@@ -63,15 +63,20 @@
     }
 
     .brand-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--gold), #F2D98B);
-      color: var(--navy);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      overflow: hidden;
       display: grid;
       place-items: center;
-      font-weight: 900;
-      letter-spacing: -0.05em;
+      flex-shrink: 0;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .nav-links {
@@ -599,7 +604,7 @@
   <header class="topbar">
     <nav class="nav">
       <a class="brand" href="#top" aria-label="JW Business Solution">
-        <span class="brand-mark">JW</span>
+        <span class="brand-mark"><img src="presenter_assets/jw_logo.png" alt="JW Business Solution Logo"></span>
         <span>JW Business Solution</span>
       </a>
       <div class="nav-links">
@@ -940,7 +945,10 @@
 
   <footer>
     <div class="footer-inner">
-      <div><strong>JW Business Solution</strong><br>Advanced Excel, financial modelling, analytics, and reporting capability development.</div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="presenter_assets/jw_logo.png" alt="JW Business Solution" style="width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+        <div><strong>JW Business Solution</strong><br>Advanced Excel, financial modelling, analytics, and reporting capability development.</div>
+      </div>
       <div>Prepared for Grace Kennedy Team | May 2026</div>
     </div>
   </footer>
