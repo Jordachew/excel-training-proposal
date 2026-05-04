@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 900" width="780" height="900">
+
+  <!-- Dashboard window shell -->
+  <rect x="18" y="30" width="744" height="840" rx="14" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="18" y="30" width="744" height="46" rx="14" fill="rgba(255,255,255,0.09)"/>
+  <rect x="18" y="62" width="744" height="14" fill="rgba(255,255,255,0.09)"/>
+  <!-- Traffic lights -->
+  <circle cx="46" cy="53" r="6" fill="rgba(255,100,100,0.55)"/>
+  <circle cx="66" cy="53" r="6" fill="rgba(255,190,50,0.55)"/>
+  <circle cx="86" cy="53" r="6" fill="rgba(50,200,100,0.55)"/>
+  <!-- Tabs -->
+  <rect x="108" y="42" width="78" height="22" rx="4" fill="rgba(14,124,123,0.35)" stroke="rgba(14,124,123,0.6)" stroke-width="1"/>
+  <text x="120" y="57" font-family="Calibri,Arial,sans-serif" font-size="11" font-weight="700" fill="white">Dashboard</text>
+  <text x="198" y="57" font-family="Calibri,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.42)">P&amp;L</text>
+  <text x="232" y="57" font-family="Calibri,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.42)">Variance</text>
+  <text x="302" y="57" font-family="Calibri,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.42)">Forecast</text>
+  <text x="364" y="57" font-family="Calibri,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.42)">Scenarios</text>
+
+  <!-- Formula bar -->
+  <rect x="28" y="88" width="480" height="26" rx="4" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+  <text x="18" y="106" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">  fx </text>
+  <text x="50" y="106" font-family="'Courier New',monospace" font-size="10.5" fill="rgba(214,168,79,0.92)">=SUMIFS(Revenue,Dept,B4,Period,"Q4-2025")</text>
+
+  <!-- ── KPI ROW ── -->
+  <!-- Card 1 Revenue -->
+  <rect x="28" y="126" width="164" height="82" rx="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+  <text x="44" y="147" font-family="Calibri,Arial,sans-serif" font-size="9.5" letter-spacing="0.1em" fill="rgba(255,255,255,0.48)">REVENUE</text>
+  <text x="44" y="177" font-family="Calibri,Arial,sans-serif" font-size="26" font-weight="800" fill="white">$4.2M</text>
+  <text x="44" y="199" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#52C97A">▲ 8.4%  vs Budget</text>
+
+  <!-- Card 2 EBITDA -->
+  <rect x="204" y="126" width="164" height="82" rx="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+  <text x="220" y="147" font-family="Calibri,Arial,sans-serif" font-size="9.5" letter-spacing="0.1em" fill="rgba(255,255,255,0.48)">EBITDA</text>
+  <text x="220" y="177" font-family="Calibri,Arial,sans-serif" font-size="26" font-weight="800" fill="white">$1.8M</text>
+  <text x="220" y="199" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#52C97A">▲ 12.1%  vs Prior Year</text>
+
+  <!-- Card 3 Variance -->
+  <rect x="380" y="126" width="164" height="82" rx="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+  <text x="396" y="147" font-family="Calibri,Arial,sans-serif" font-size="9.5" letter-spacing="0.1em" fill="rgba(255,255,255,0.48)">VARIANCE</text>
+  <text x="396" y="177" font-family="Calibri,Arial,sans-serif" font-size="26" font-weight="800" fill="#D6A84F">+$340K</text>
+  <text x="396" y="199" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)">Actual vs Forecast</text>
+
+  <!-- Card 4 Margin -->
+  <rect x="556" y="126" width="190" height="82" rx="7" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+  <text x="572" y="147" font-family="Calibri,Arial,sans-serif" font-size="9.5" letter-spacing="0.1em" fill="rgba(255,255,255,0.48)">GROSS MARGIN</text>
+  <text x="572" y="177" font-family="Calibri,Arial,sans-serif" font-size="26" font-weight="800" fill="white">43.2%</text>
+  <text x="572" y="199" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#FF7A7A">▼ 1.2%  vs Plan</text>
+
+  <!-- ── MAIN CHART — Revenue vs Budget Monthly ── -->
+  <rect x="28" y="222" width="476" height="248" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <text x="46" y="246" font-family="Calibri,Arial,sans-serif" font-size="12" font-weight="700" fill="rgba(255,255,255,0.92)">Revenue vs Budget — Monthly</text>
+
+  <!-- Gridlines -->
+  <line x1="60" y1="260" x2="490" y2="260" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="290" x2="490" y2="290" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="320" x2="490" y2="320" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="350" x2="490" y2="350" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="380" x2="490" y2="380" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="410" x2="490" y2="410" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Bars — Budget (ghost) then Actual side by side, 7 months -->
+  <!-- Jan -->
+  <rect x="68"  y="358" width="20" height="52" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="90"  y="342" width="20" height="68" rx="2" fill="#0E7C7B"/>
+  <!-- Feb -->
+  <rect x="124" y="350" width="20" height="60" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="146" y="330" width="20" height="80" rx="2" fill="#0E7C7B"/>
+  <!-- Mar -->
+  <rect x="180" y="344" width="20" height="66" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="202" y="318" width="20" height="92" rx="2" fill="#0E7C7B"/>
+  <!-- Apr -->
+  <rect x="236" y="352" width="20" height="58" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="258" y="305" width="20" height="105" rx="2" fill="#165D8F"/>
+  <!-- May -->
+  <rect x="292" y="342" width="20" height="68" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="314" y="292" width="20" height="118" rx="2" fill="#165D8F"/>
+  <!-- Jun -->
+  <rect x="348" y="336" width="20" height="74" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="370" y="298" width="20" height="112" rx="2" fill="#165D8F"/>
+  <!-- Jul (gold = above target) -->
+  <rect x="404" y="326" width="20" height="84" rx="2" fill="rgba(255,255,255,0.13)"/>
+  <rect x="426" y="278" width="20" height="132" rx="2" fill="#D6A84F"/>
+
+  <!-- Trend line over actuals -->
+  <polyline points="100,336 156,324 212,310 268,297 324,280 380,270 436,258"
+            fill="none" stroke="rgba(214,168,79,0.85)" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="336" r="3.5" fill="#D6A84F"/>
+  <circle cx="156" cy="324" r="3.5" fill="#D6A84F"/>
+  <circle cx="212" cy="310" r="3.5" fill="#D6A84F"/>
+  <circle cx="268" cy="297" r="3.5" fill="#D6A84F"/>
+  <circle cx="324" cy="280" r="3.5" fill="#D6A84F"/>
+  <circle cx="380" cy="270" r="3.5" fill="#D6A84F"/>
+  <circle cx="436" cy="258" r="3.5" fill="#D6A84F"/>
+
+  <!-- X-axis -->
+  <line x1="56" y1="411" x2="490" y2="411" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+  <text x="70"  y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Jan</text>
+  <text x="126" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Feb</text>
+  <text x="182" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Mar</text>
+  <text x="238" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Apr</text>
+  <text x="294" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">May</text>
+  <text x="350" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Jun</text>
+  <text x="406" y="424" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.38)">Jul</text>
+
+  <!-- Legend -->
+  <rect x="290" y="432" width="12" height="8" rx="2" fill="rgba(255,255,255,0.20)"/>
+  <text x="306" y="440" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Budget</text>
+  <rect x="350" y="432" width="12" height="8" rx="2" fill="#0E7C7B"/>
+  <text x="366" y="440" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Actual</text>
+  <line x1="410" y1="436" x2="424" y2="436" stroke="#D6A84F" stroke-width="2"/>
+  <circle cx="417" cy="436" r="2.5" fill="#D6A84F"/>
+  <text x="428" y="440" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Trend</text>
+
+  <!-- ── RIGHT PANEL — Variance by Dept ── -->
+  <rect x="516" y="222" width="236" height="248" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <text x="532" y="246" font-family="Calibri,Arial,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.92)">Variance by Department</text>
+  <!-- Header -->
+  <rect x="516" y="254" width="236" height="20" fill="rgba(255,255,255,0.08)"/>
+  <text x="528" y="268" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.5)">DEPT</text>
+  <text x="636" y="268" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.5)">ACTUAL</text>
+  <text x="698" y="268" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.5)">VAR%</text>
+  <!-- Row 1 -->
+  <rect x="516" y="274" width="236" height="22" fill="rgba(255,255,255,0.02)"/>
+  <text x="528" y="289" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">FP&amp;A</text>
+  <text x="636" y="289" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">$892K</text>
+  <text x="698" y="289" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#52C97A">+6.2%</text>
+  <!-- Row 2 -->
+  <rect x="516" y="296" width="236" height="22" fill="rgba(255,255,255,0.04)"/>
+  <text x="528" y="311" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">Sales</text>
+  <text x="636" y="311" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">$1.24M</text>
+  <text x="698" y="311" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#52C97A">+11.8%</text>
+  <!-- Row 3 -->
+  <rect x="516" y="318" width="236" height="22" fill="rgba(255,255,255,0.02)"/>
+  <text x="528" y="333" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">Accounting</text>
+  <text x="636" y="333" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">$678K</text>
+  <text x="698" y="333" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#FF7A7A">-2.4%</text>
+  <!-- Row 4 -->
+  <rect x="516" y="340" width="236" height="22" fill="rgba(255,255,255,0.04)"/>
+  <text x="528" y="355" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">Production</text>
+  <text x="636" y="355" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.82)">$1.39M</text>
+  <text x="698" y="355" font-family="Calibri,Arial,sans-serif" font-size="10" fill="#52C97A">+9.7%</text>
+  <!-- Total -->
+  <rect x="516" y="362" width="236" height="24" fill="rgba(14,124,123,0.22)"/>
+  <line x1="516" y1="362" x2="752" y2="362" stroke="rgba(14,124,123,0.55)" stroke-width="1"/>
+  <text x="528" y="378" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">Total</text>
+  <text x="636" y="378" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">$4.20M</text>
+  <text x="698" y="378" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="#52C97A">+7.3%</text>
+  <!-- Mini spark bars -->
+  <text x="528" y="400" font-family="Calibri,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.38)">Performance to target</text>
+  <rect x="528" y="406" width="100" height="7" rx="3" fill="rgba(255,255,255,0.10)"/>
+  <rect x="528" y="406" width="66" height="7" rx="3" fill="#0E7C7B"/>
+  <text x="636" y="413" font-family="Calibri,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">FP&amp;A 66%</text>
+  <rect x="528" y="418" width="100" height="7" rx="3" fill="rgba(255,255,255,0.10)"/>
+  <rect x="528" y="418" width="85" height="7" rx="3" fill="#165D8F"/>
+  <text x="636" y="425" font-family="Calibri,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Sales 85%</text>
+  <rect x="528" y="430" width="100" height="7" rx="3" fill="rgba(255,255,255,0.10)"/>
+  <rect x="528" y="430" width="90" height="7" rx="3" fill="#D6A84F"/>
+  <text x="636" y="437" font-family="Calibri,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Prod 90%</text>
+  <rect x="528" y="442" width="100" height="7" rx="3" fill="rgba(255,255,255,0.10)"/>
+  <rect x="528" y="442" width="58" height="7" rx="3" fill="#8E9EAA"/>
+  <text x="636" y="449" font-family="Calibri,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.45)">Acctg 58%</text>
+
+  <!-- ── SCENARIO ANALYSIS PANEL ── -->
+  <rect x="28" y="484" width="476" height="168" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <text x="46" y="506" font-family="Calibri,Arial,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.92)">Scenario &amp; Sensitivity Analysis</text>
+  <!-- Header -->
+  <rect x="28" y="514" width="476" height="20" fill="rgba(255,255,255,0.08)"/>
+  <text x="44"  y="528" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.48)">SCENARIO</text>
+  <text x="204" y="528" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.48)">REVENUE</text>
+  <text x="290" y="528" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.48)">EBITDA</text>
+  <text x="368" y="528" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.48)">MARGIN</text>
+  <text x="440" y="528" font-family="Calibri,Arial,sans-serif" font-size="8.5" font-weight="700" fill="rgba(255,255,255,0.48)">STATUS</text>
+  <!-- Upside -->
+  <rect x="28" y="534" width="476" height="24" fill="rgba(255,255,255,0.02)"/>
+  <text x="44"  y="550" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">Upside Case</text>
+  <text x="204" y="550" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$4.8M</text>
+  <text x="290" y="550" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$2.1M</text>
+  <text x="368" y="550" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">43.8%</text>
+  <rect x="436" y="538" width="52" height="14" rx="3" fill="rgba(82,201,122,0.20)"/>
+  <text x="442" y="549" font-family="Calibri,Arial,sans-serif" font-size="8" font-weight="700" fill="#52C97A">UPSIDE</text>
+  <!-- Base (highlighted) -->
+  <rect x="28" y="558" width="476" height="24" fill="rgba(14,124,123,0.18)"/>
+  <line x1="28" y1="558" x2="504" y2="558" stroke="rgba(14,124,123,0.5)" stroke-width="1"/>
+  <text x="44"  y="574" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">▶  Base Case</text>
+  <text x="204" y="574" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">$4.2M</text>
+  <text x="290" y="574" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">$1.8M</text>
+  <text x="368" y="574" font-family="Calibri,Arial,sans-serif" font-size="10" font-weight="700" fill="white">42.9%</text>
+  <rect x="436" y="562" width="44" height="14" rx="3" fill="rgba(14,124,123,0.45)"/>
+  <text x="442" y="573" font-family="Calibri,Arial,sans-serif" font-size="8" font-weight="700" fill="#0E7C7B">BASE</text>
+  <!-- Downside -->
+  <rect x="28" y="582" width="476" height="24" fill="rgba(255,255,255,0.02)"/>
+  <text x="44"  y="598" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">Downside Case</text>
+  <text x="204" y="598" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$3.6M</text>
+  <text x="290" y="598" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$1.4M</text>
+  <text x="368" y="598" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">38.9%</text>
+  <rect x="436" y="586" width="58" height="14" rx="3" fill="rgba(255,122,122,0.20)"/>
+  <text x="440" y="597" font-family="Calibri,Arial,sans-serif" font-size="8" font-weight="700" fill="#FF7A7A">DOWNSIDE</text>
+  <!-- Management -->
+  <rect x="28" y="606" width="476" height="24" fill="rgba(214,168,79,0.07)"/>
+  <text x="44"  y="622" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">Management Case</text>
+  <text x="204" y="622" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$4.5M</text>
+  <text x="290" y="622" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">$1.95M</text>
+  <text x="368" y="622" font-family="Calibri,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.78)">43.3%</text>
+  <rect x="436" y="610" width="48" height="14" rx="3" fill="rgba(214,168,79,0.28)"/>
+  <text x="441" y="621" font-family="Calibri,Arial,sans-serif" font-size="8" font-weight="700" fill="#D6A84F">MGMT</text>
+
+  <!-- ── FORMULA PILLS PANEL ── -->
+  <rect x="516" y="484" width="236" height="168" rx="7" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+  <text x="532" y="506" font-family="Calibri,Arial,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.92)">Advanced Formula Suite</text>
+  <!-- Pills row 1 -->
+  <rect x="530" y="514" width="66" height="18" rx="9" fill="rgba(22,93,143,0.45)" stroke="rgba(22,93,143,0.75)" stroke-width="1"/>
+  <text x="538" y="526" font-family="'Courier New',monospace" font-size="9" fill="white">XLOOKUP</text>
+  <rect x="604" y="514" width="50" height="18" rx="9" fill="rgba(14,124,123,0.45)" stroke="rgba(14,124,123,0.75)" stroke-width="1"/>
+  <text x="612" y="526" font-family="'Courier New',monospace" font-size="9" fill="white">SUMIFS</text>
+  <!-- Pills row 2 -->
+  <rect x="530" y="538" width="78" height="18" rx="9" fill="rgba(214,168,79,0.32)" stroke="rgba(214,168,79,0.58)" stroke-width="1"/>
+  <text x="535" y="550" font-family="'Courier New',monospace" font-size="9" fill="white">Power Query</text>
+  <rect x="616" y="538" width="50" height="18" rx="9" fill="rgba(22,93,143,0.45)" stroke="rgba(22,93,143,0.75)" stroke-width="1"/>
+  <text x="622" y="550" font-family="'Courier New',monospace" font-size="9" fill="white">IFERROR</text>
+  <!-- Pills row 3 -->
+  <rect x="530" y="562" width="66" height="18" rx="9" fill="rgba(14,124,123,0.45)" stroke="rgba(14,124,123,0.75)" stroke-width="1"/>
+  <text x="535" y="574" font-family="'Courier New',monospace" font-size="9" fill="white">PivotTable</text>
+  <rect x="604" y="562" width="80" height="18" rx="9" fill="rgba(214,168,79,0.32)" stroke="rgba(214,168,79,0.58)" stroke-width="1"/>
+  <text x="608" y="574" font-family="'Courier New',monospace" font-size="9" fill="white">Data Tables 2D</text>
+  <!-- Pills row 4 -->
+  <rect x="530" y="586" width="86" height="18" rx="9" fill="rgba(22,93,143,0.45)" stroke="rgba(22,93,143,0.75)" stroke-width="1"/>
+  <text x="534" y="598" font-family="'Courier New',monospace" font-size="9" fill="white">Dynamic Arrays</text>
+  <rect x="624" y="586" width="42" height="18" rx="9" fill="rgba(14,124,123,0.45)" stroke="rgba(14,124,123,0.75)" stroke-width="1"/>
+  <text x="629" y="598" font-family="'Courier New',monospace" font-size="9" fill="white">FILTER</text>
+  <!-- Pills row 5 -->
+  <rect x="530" y="610" width="60" height="18" rx="9" fill="rgba(214,168,79,0.32)" stroke="rgba(214,168,79,0.58)" stroke-width="1"/>
+  <text x="535" y="622" font-family="'Courier New',monospace" font-size="9" fill="white">Goal Seek</text>
+  <rect x="598" y="610" width="66" height="18" rx="9" fill="rgba(22,93,143,0.45)" stroke="rgba(22,93,143,0.75)" stroke-width="1"/>
+  <text x="603" y="622" font-family="'Courier New',monospace" font-size="9" fill="white">Power Pivot</text>
+
+  <!-- ── POWER QUERY + FORECAST STRIP ── -->
+  <rect x="28" y="666" width="724" height="130" rx="7" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+  <text x="46" y="688" font-family="Calibri,Arial,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.88)">5-Year Forecast Projection</text>
+  <!-- Forecast area chart -->
+  <defs>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(14,124,123,0.35)"/>
+      <stop offset="100%" stop-color="rgba(14,124,123,0.02)"/>
+    </linearGradient>
+  </defs>
+  <!-- Area fill -->
+  <polygon points="60,760 154,742 280,720 406,698 532,672 658,650 720,638 720,780 60,780"
+           fill="url(#areaGrad)"/>
+  <!-- Line -->
+  <polyline points="60,760 154,742 280,720 406,698 532,672 658,650 720,638"
+            fill="none" stroke="#0E7C7B" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Dots -->
+  <circle cx="60"  cy="760" r="4" fill="#0E7C7B"/>
+  <circle cx="154" cy="742" r="4" fill="#0E7C7B"/>
+  <circle cx="280" cy="720" r="4" fill="#0E7C7B"/>
+  <circle cx="406" cy="698" r="4" fill="#0E7C7B"/>
+  <circle cx="532" cy="672" r="4" fill="#D6A84F"/>
+  <circle cx="658" cy="650" r="4" fill="#D6A84F"/>
+  <circle cx="720" cy="638" r="4" fill="#D6A84F"/>
+  <!-- Forecast divider -->
+  <line x1="452" y1="668" x2="452" y2="782" stroke="rgba(214,168,79,0.35)" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="376" y="698" font-family="Calibri,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.35)">Actual</text>
+  <text x="458" y="698" font-family="Calibri,Arial,sans-serif" font-size="8.5" fill="rgba(214,168,79,0.65)">Forecast</text>
+  <!-- Year labels -->
+  <text x="50"  y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">2021</text>
+  <text x="144" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">2022</text>
+  <text x="270" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">2023</text>
+  <text x="396" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">2024</text>
+  <text x="522" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(214,168,79,0.6)">2025F</text>
+  <text x="648" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(214,168,79,0.6)">2026F</text>
+  <text x="710" y="792" font-family="Calibri,Arial,sans-serif" font-size="9" fill="rgba(214,168,79,0.6)">2027F</text>
+
+</svg>

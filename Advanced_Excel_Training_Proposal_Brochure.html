@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Microsoft Excel Training Proposal | JW Business Solution</title>
+  <style>
+    :root {
+      --navy: #0B1F33;
+      --blue: #165D8F;
+      --teal: #0E7C7B;
+      --gold: #D6A84F;
+      --mist: #EAF2F6;
+      --paper: #F7F9FB;
+      --ink: #1A2633;
+      --muted: #647184;
+      --line: #DCE5EC;
+      --white: #FFFFFF;
+      --success: #1D7A55;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Aptos, Calibri, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11, 31, 51, 0.96);
+      color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--gold), #F2D98B);
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.78);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .hero {
+      background:
+        linear-gradient(120deg, rgba(11,31,51,0.96) 0%, rgba(11,31,51,0.90) 46%, rgba(14,124,123,0.72) 100%),
+        url("presenter_assets/dashboard_hero.svg") center right / auto 115% no-repeat;
+      color: var(--white);
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 72px 24px;
+      width: 100%;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(42px, 7vw, 86px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 22px;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      font-size: 20px;
+      color: rgba(255,255,255,0.84);
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.24);
+    }
+
+    .btn.primary {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: var(--gold);
+    }
+
+    .btn.secondary { color: var(--white); }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(140px, 1fr));
+      max-width: 900px;
+      gap: 12px;
+    }
+
+    .metric {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .metric-value {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.72);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    section {
+      padding: 76px 24px;
+    }
+
+    .section-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.6fr);
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4.5vw, 52px);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 45px rgba(11,31,51,0.08);
+    }
+
+    .brief-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+    }
+
+    .brief-copy {
+      padding: 34px;
+    }
+
+    .brief-copy h3,
+    .card h3,
+    .presenter-info h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .brief-copy p,
+    .presenter-info p,
+    .card p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 12px;
+      padding: 34px;
+      background: linear-gradient(180deg, #F8FBFD, #EDF5F8);
+      border-left: 1px solid var(--line);
+    }
+
+    .impact-item {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .tick {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(14,124,123,0.12);
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .pillar {
+      padding: 24px;
+      min-height: 230px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pillar::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 4px;
+      background: var(--gold);
+    }
+
+    .pillar-number {
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .pillar ul,
+    .module-list ul,
+    .logistics ul {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .curriculum {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .curriculum h2 { color: var(--white); }
+    .curriculum .lead { color: rgba(255,255,255,0.74); }
+
+    .day-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .day-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .day-card h3 {
+      color: var(--gold);
+      font-size: 26px;
+      margin-bottom: 6px;
+    }
+
+    .day-card .subtitle {
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 22px;
+    }
+
+    .module-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .module {
+      padding: 16px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .module strong {
+      display: block;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .module span {
+      color: rgba(255,255,255,0.72);
+      font-size: 14px;
+    }
+
+    .presenters-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .presenter-card {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      min-height: 360px;
+      overflow: hidden;
+    }
+
+    .presenter-photo {
+      background: var(--mist);
+      min-height: 100%;
+    }
+
+    .presenter-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .presenter-info {
+      padding: 26px;
+    }
+
+    .role {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+    }
+
+    .bio-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .bio-tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 11px;
+      color: var(--blue);
+      background: #F7FBFD;
+      font-weight: 700;
+    }
+
+    .logistics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 26px;
+    }
+
+    .card-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: rgba(214,168,79,0.18);
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      color: var(--white);
+    }
+
+    .cta h2 { color: var(--white); }
+    .cta .lead { color: rgba(255,255,255,0.82); }
+
+    .cta-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .next-steps {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 8px;
+      padding: 26px;
+    }
+
+    .next-steps ol {
+      padding-left: 20px;
+      color: rgba(255,255,255,0.86);
+    }
+
+    footer {
+      background: #071522;
+      color: rgba(255,255,255,0.72);
+      padding: 34px 24px;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .nav-links { overflow-x: auto; width: 100%; }
+      .hero { background-position: center bottom; background-size: auto 70%; min-height: 760px; align-items: flex-start; }
+      .hero-inner { padding-top: 54px; }
+      .hero-copy { font-size: 17px; }
+      .metrics, .pillars, .day-grid, .presenters-grid, .brief-grid, .logistics, .section-heading, .cta-box {
+        grid-template-columns: 1fr;
+      }
+      .presenter-card { grid-template-columns: 1fr; }
+      .presenter-photo { height: 320px; }
+    }
+
+    .btn.download {
+      background: rgba(255,255,255,0.12);
+      color: var(--white);
+      border-color: rgba(255,255,255,0.32);
+      gap: 7px;
+    }
+
+    .btn.download:hover {
+      background: rgba(255,255,255,0.20);
+    }
+
+    .assessment-strip {
+      background: var(--mist);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 28px 24px;
+    }
+
+    .assessment-strip-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .assessment-strip-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .assessment-strip-text span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn.download-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--navy);
+      color: var(--white);
+      border: 1px solid var(--navy);
+      white-space: nowrap;
+    }
+
+    .btn.download-dark:hover {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    .card-download {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .card-download:hover { background: var(--blue); }
+
+    @media print {
+      .topbar, .hero-actions, .assessment-strip { display: none; }
+      body { background: white; font-size: 10pt; }
+      .hero {
+        min-height: auto;
+        background: var(--navy);
+      }
+      section, .hero-inner { padding: 36px 24px; }
+      .panel, .day-card, .module, .next-steps { box-shadow: none; break-inside: avoid; }
+      .section-heading, .brief-grid, .pillars, .day-grid, .presenters-grid, .logistics, .cta-box {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="JW Business Solution">
+        <span class="brand-mark">JW</span>
+        <span>JW Business Solution</span>
+      </a>
+      <div class="nav-links">
+        <a href="#brief">Brief</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#presenters">Presenters</a>
+        <a href="#logistics">Logistics</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Proposal For Grace Kennedy Team</div>
+        <h1>Advanced Microsoft Excel Training</h1>
+        <p class="hero-copy">A focused 2-day learning experience designed to sharpen Excel capability across FP&amp;A, sales analysis, accounting, and production analysis teams.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#curriculum">View Curriculum</a>
+          <a class="btn secondary" href="#presenters">Meet The Presenters</a>
+          <a class="btn download" href="Excel_Advanced_Training_Pre_Course_Assessment.pdf" download>
+            ↓ Pre-Course Assessment
+          </a>
+        </div>
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-value">2</div>
+            <div class="metric-label">Training Days</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">12</div>
+            <div class="metric-label">Training Hours</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">80%</div>
+            <div class="metric-label">Hands-On Buildouts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brief">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Engagement Brief</div>
+            <h2>From spreadsheet users to stronger business analysts.</h2>
+          </div>
+          <p class="lead">This proposal is structured around practical Excel application, analytical reasoning, reporting discipline, and repeatable workflows for professionals who rely on Excel daily.</p>
+        </div>
+
+        <div class="brief-grid panel">
+          <div class="brief-copy">
+            <h3>Training Positioning</h3>
+            <p><strong>Advanced Excel for Business Analysis, Reporting, and Decision Support</strong> is designed for analysts and finance professionals who need to move beyond basic formulas into structured analysis, modelling, dashboards, automation, and insight generation.</p>
+            <p>The course will use practical business scenarios relevant to FP&amp;A, sales, accounting, production, inventory, budget, forecast, and variance analysis workflows.</p>
+          </div>
+          <div class="impact-list">
+            <div class="impact-item">
+              <span class="tick">✓</span>
+              <div><strong>Sharper analysis</strong><br>Improve how participants clean, organize, model, and interpret data.</div>
+            </div>
+            <div class="impact-item">
+              <span class="tick">✓</span>
+              <div><strong>Better reporting</strong><br>Build clearer reports, dashboards, and summaries for management decisions.</div>
+            </div>
+            <div class="impact-item">
+              <span class="tick">✓</span>
+              <div><strong>More automation</strong><br>Reduce manual repetition using Excel Tables, PivotTables, and Power Query.</div>
+            </div>
+            <div class="impact-item">
+              <span class="tick">✓</span>
+              <div><strong>Stronger controls</strong><br>Develop workbooks that are easier to review, audit, refresh, and trust.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcomes">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Learning Outcomes</div>
+            <h2>What participants should be able to do after training.</h2>
+          </div>
+          <p class="lead">The emphasis is not only on Excel tools, but also on knowing when to use each tool and how to apply it in a business context.</p>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar panel">
+            <div class="pillar-number">Pillar 01</div>
+            <h3>Data Preparation</h3>
+            <ul>
+              <li>Clean messy data efficiently.</li>
+              <li>Use Excel Tables and structured layouts.</li>
+              <li>Apply Power Query for repeatable transformation.</li>
+            </ul>
+          </div>
+          <div class="pillar panel">
+            <div class="pillar-number">Pillar 02</div>
+            <h3>Formula Mastery</h3>
+            <ul>
+              <li>Use XLOOKUP, SUMIFS, dynamic arrays, and logic functions.</li>
+              <li>Handle errors and exceptions.</li>
+              <li>Build flexible analysis summaries.</li>
+            </ul>
+          </div>
+          <div class="pillar panel">
+            <div class="pillar-number">Pillar 03</div>
+            <h3>Reporting &amp; BI</h3>
+            <ul>
+              <li>Create PivotTables, PivotCharts, and slicers.</li>
+              <li>Build management-ready dashboards.</li>
+              <li>Present KPIs clearly and professionally.</li>
+            </ul>
+          </div>
+          <div class="pillar panel">
+            <div class="pillar-number">Pillar 04</div>
+            <h3>Modelling &amp; Controls</h3>
+            <ul>
+              <li>Structure forecast and scenario models.</li>
+              <li>Perform variance and sensitivity analysis.</li>
+              <li>Add checks, audit logic, and review discipline.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Course Content</div>
+            <h2>2-Day Advanced Microsoft Excel Curriculum.</h2>
+          </div>
+          <p class="lead">A practical curriculum combining technical skill development, applied business analysis, and guided exercises.</p>
+        </div>
+
+        <div class="day-grid">
+          <div class="day-card">
+            <h3>Day 1</h3>
+            <div class="subtitle">Data, formulas, and analytical foundations</div>
+            <div class="module-list">
+              <div class="module">
+                <strong>Module 1: Advanced Excel Mindset</strong>
+                <span>Workbook structure, model discipline, inputs, calculations, outputs, and checks.</span>
+              </div>
+              <div class="module">
+                <strong>Module 2: Data Structure &amp; Cleaning</strong>
+                <span>Excel Tables, validation, duplicates, date/text cleanup, and data quality checks.</span>
+              </div>
+              <div class="module">
+                <strong>Module 3: Advanced Formulas For Analysts</strong>
+                <span>XLOOKUP, SUMIFS, IFS, dynamic arrays, text functions, and error handling.</span>
+              </div>
+              <div class="module">
+                <strong>Module 4: PivotTables &amp; Analytical Reporting</strong>
+                <span>PivotTables, grouping, slicers, PivotCharts, calculated fields, and common pitfalls.</span>
+              </div>
+              <div class="module">
+                <strong>Module 5: Introduction To Power Query</strong>
+                <span>Import, clean, transform, merge, append, and refresh reporting data.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-card">
+            <h3>Day 2</h3>
+            <div class="subtitle">Modelling, dashboards, controls, and business reasoning</div>
+            <div class="module-list">
+              <div class="module">
+                <strong>Module 6: FP&amp;A And Business Modelling</strong>
+                <span>Forecast logic, assumptions, revenue/cost drivers, and structured model design.</span>
+              </div>
+              <div class="module">
+                <strong>Module 7: Variance &amp; Performance Analysis</strong>
+                <span>Actual vs budget, actual vs prior year, price-volume-mix thinking, and commentary.</span>
+              </div>
+              <div class="module">
+                <strong>Module 8: Scenario &amp; Sensitivity Analysis</strong>
+                <span>Goal Seek, Data Tables, scenario analysis, downside/base/upside cases.</span>
+              </div>
+              <div class="module">
+                <strong>Module 9: Dashboards &amp; Management Reporting</strong>
+                <span>KPI selection, layout, slicers, charts, conditional formatting, and decision-ready views.</span>
+              </div>
+              <div class="module">
+                <strong>Module 10-11: Controls And Capstone Case</strong>
+                <span>Audit checks, reconciliation, formula review, and a full business case buildout.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="presenters">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Presenters</div>
+            <h2>Experienced finance and analytics practitioners.</h2>
+          </div>
+          <p class="lead">The facilitation team brings practical experience in FP&amp;A, financial modelling, valuation, reporting, and advanced Excel application.</p>
+        </div>
+
+        <div class="presenters-grid">
+          <article class="presenter-card panel">
+            <div class="presenter-photo">
+              <img src="presenter_assets/image1.png" alt="Jordache Wilson">
+            </div>
+            <div class="presenter-info">
+              <div class="role">Lead Instructor</div>
+              <h3>Jordache Wilson</h3>
+              <p>Jordache Wilson is the Group Finance Planning and Analysis Manager at Jamaica Public Service (JPS), with over a decade of experience in financial planning, performance management, and data-driven decision-making.</p>
+              <p>He has held senior roles at Digicel Jamaica and Red Stripe/Heineken, leading budgeting and forecasting processes, developing financial models, and delivering insights that strengthened business performance.</p>
+              <p>As Managing Director of JW Business Solutions, he delivers practical, hands-on training in Advanced Microsoft Excel and data analytics, equipping professionals with real-world skills in automation, financial modelling, and decision support.</p>
+              <div class="bio-tags">
+                <span class="bio-tag">FP&amp;A</span>
+                <span class="bio-tag">Financial Modelling</span>
+                <span class="bio-tag">Data Analytics</span>
+                <span class="bio-tag">Excel Training</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="presenter-card panel">
+            <div class="presenter-photo">
+              <img src="presenter_assets/image2.png" alt="Kadejha Colquhoun">
+            </div>
+            <div class="presenter-info">
+              <div class="role">Co-Presenter</div>
+              <h3>Kadejha Colquhoun</h3>
+              <p>Kadejha Colquhoun is a valuation professional based in Kingston, Jamaica, currently serving as a Senior Associate at PwC Jamaica within the Deal Advisory practice.</p>
+              <p>She has over five years of business valuation experience, supported by three years of accounting experience, with technical capabilities in financial analysis and modelling across government and private sector engagements.</p>
+              <p>Kadejha demonstrates advanced proficiency in Excel, including complex dynamic financial models, Power Pivot for large datasets, and automation techniques to enhance analytical efficiency and reporting accuracy.</p>
+              <div class="bio-tags">
+                <span class="bio-tag">Valuation</span>
+                <span class="bio-tag">Deal Advisory</span>
+                <span class="bio-tag">Power Pivot</span>
+                <span class="bio-tag">Financial Analysis</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="logistics">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">Strategic Logistics</div>
+            <h2>Designed for a focused group of professionals.</h2>
+          </div>
+          <p class="lead">The delivery model is structured to balance instruction, live demonstration, individual practice, and practical application.</p>
+        </div>
+
+        <div class="logistics">
+          <div class="card panel">
+            <div class="card-icon">01</div>
+            <h3>Format</h3>
+            <p>2-day intensive training session, 6 hours per day, delivered in person or in a guided live environment.</p>
+          </div>
+          <div class="card panel">
+            <div class="card-icon">02</div>
+            <h3>Who This Is For</h3>
+            <p>For professionals in FP&amp;A, sales analysis, accounting, and production analysis.</p>
+          </div>
+          <div class="card panel">
+            <div class="card-icon">03</div>
+            <h3>Approach</h3>
+            <p>Recommended delivery mix: 30% explanation, 60% hands-on exercises, and 10% discussion and review.</p>
+          </div>
+          <div class="card panel">
+            <div class="card-icon">04</div>
+            <h3>Prerequisites</h3>
+            <ul>
+              <li>Comfortable navigating Excel.</li>
+              <li>Basic formula knowledge.</li>
+              <li>Ability to sort, filter, and format data.</li>
+              <li>Familiarity with business reports.</li>
+            </ul>
+          </div>
+          <div class="card panel">
+            <div class="card-icon">05</div>
+            <h3>Materials</h3>
+            <ul>
+              <li>Participant workbooks.</li>
+              <li>Raw datasets and completed solutions.</li>
+              <li>Formula and Power Query references.</li>
+              <li>Dashboard and model review checklists.</li>
+            </ul>
+          </div>
+          <div class="card panel">
+            <div class="card-icon">06</div>
+            <h3>Assessment</h3>
+            <p>A pre-course assessment is included to verify readiness, identify needs, and tailor the examples to the team.</p>
+            <a class="card-download" href="Excel_Advanced_Training_Pre_Course_Assessment.pdf" download>↓ Download Assessment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="assessment-strip">
+      <div class="assessment-strip-inner">
+        <div class="assessment-strip-text">
+          <strong>Pre-Course Assessment &amp; Needs Survey</strong>
+          <span>Circulate to participants ahead of the training date. Takes 10–15 minutes to complete. Used to tailor exercises to the team's real workflows.</span>
+        </div>
+        <a class="btn download-dark" href="Excel_Advanced_Training_Pre_Course_Assessment.pdf" download>↓ Download Assessment (PDF)</a>
+      </div>
+    </div>
+
+    <section class="cta">
+      <div class="section-inner cta-box">
+        <div>
+          <div class="eyebrow">Recommended Next Step</div>
+          <h2>Confirm needs, tailor the examples, then deliver.</h2>
+          <p class="lead">The strongest outcome will come from aligning the final exercises with the team's real workflows and pain points before the training date.</p>
+        </div>
+        <div class="next-steps">
+          <h3>Next Steps</h3>
+          <ol>
+            <li>Confirm participant list and roles.</li>
+            <li><a href="Excel_Advanced_Training_Pre_Course_Assessment.pdf" download style="color:var(--gold);font-weight:700;">Download &amp; circulate the pre-course assessment.</a></li>
+            <li>Review responses and current Excel skill level.</li>
+            <li>Request anonymized sample reports or datasets.</li>
+            <li>Finalize the training pack and practical exercises.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div><strong>JW Business Solution</strong><br>Advanced Excel, financial modelling, analytics, and reporting capability development.</div>
+      <div>Prepared for Grace Kennedy Team | May 2026</div>
+    </div>
+  </footer>
+</body>
+</html>
