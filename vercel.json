@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Advanced_Excel_Training_Proposal_Brochure.html" }
+  ]
+}
